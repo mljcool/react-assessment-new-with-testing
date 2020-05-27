@@ -1,0 +1,66 @@
+.app {
+  margin-top: 40px;
+  .custom-cards {
+    cursor: pointer;
+  }
+  .member-lists {
+    .card {
+      width: 70%;
+      &:hover {
+        cursor: pointer;
+        background: #e0e1e2;
+      }
+      .header {
+        font-weight: 700;
+        line-height: 1.28571429em;
+        font-size: 1.28571429em;
+      }
+      .extra {
+        &.content {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+  .post-lists {
+    .create-post-actions {
+      padding: 10px 2px;
+      background: #2185d0;
+      cursor: pointer;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      display: flex;
+      text-align: center;
+
+      span {
+        width: 100%;
+        padding: 10px;
+        font-weight: bolder;
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+    .card {
+      width: 100%;
+      .header {
+        font-weight: 700;
+        line-height: 1.28571429em;
+        font-size: 1.28571429em;
+      }
+      .extra {
+        &.content {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+  .create-post {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .create-post-form {
+    margin-top: 15px;
+  }
+}
