@@ -14,12 +14,13 @@ describe('<MembersPost />', () => {
     const wrapper = ({ children }: any) => (
       <ReduxProvider reduxStore={store}>{children}</ReduxProvider>
     );
-    const component: any = await renderHook(() => MembersPost(), {
+    const component = await renderHook(() => MembersPost(), {
       wrapper,
     });
     const className = component.result.current.props.className;
     const testId = component.result.current.props['data-testid'];
     expect(className).toEqual('post-lists');
     expect(testId).toEqual('post-lists-component');
+    component.unmount();
   });
 });

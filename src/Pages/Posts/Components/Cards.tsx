@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface CardProps {
+export interface CardProps {
   avatar?: string;
   description: string;
   header: string;
@@ -20,7 +20,7 @@ const Cards: React.FC<CardProps> = ({
   isSelected,
 }) => {
   return (
-    <div className='ui cards custom-cards'>
+    <div className='ui cards custom-cards' data-testid='card-component'>
       <div
         className='card'
         onClick={onSelect}
