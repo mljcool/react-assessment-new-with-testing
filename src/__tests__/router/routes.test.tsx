@@ -27,5 +27,6 @@ describe('<Router />', () => {
       </Provider>
     );
     const getText = await getAllByText('Create New Post');
+    expect(getText).toHaveLength(1);
   });
 });
