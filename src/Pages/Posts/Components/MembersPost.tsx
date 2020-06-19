@@ -34,7 +34,7 @@ const MembersPost = () => {
   };
 
   return (
-    <div className='post-lists'>
+    <div className='post-lists' data-testid='post-lists-component'>
       <h2>{currentUser.user.name || 'Loading......'}</h2>
       <button className='fluid ui blue button create-post' onClick={createPost}>
         <i className='file icon'></i>
